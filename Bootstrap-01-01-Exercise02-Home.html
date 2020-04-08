@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Tutorial</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{ 
+            font-family: DFKai-SB, BiauKai,KaiTi, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+    </style>
+</head>
+
+<body>
+    Bootstrap Tutroial Chap 02-02 Navigation Bar
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Bootstrap-01-01-Exercise02-Home.html">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">樂學</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        餐點
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Bootstrap-01-01-Exercise02-Breakfast.html">早餐</a>
+                        <a class="dropdown-item" href="Bootstrap-01-01-Exercise02-Lunch.html">午餐</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Bootstrap-01-01-Exercise02-Drinks.html">飲料</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">結帳</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container mt-1 mb-5" style="position:relative">
+        <img src="figure/IMG-001-CookingClassLogo.jpg" class="img-fluid" alt="樂學-廚藝教室">
+        <div class="h3 text-center" style="position:absolute; left:45%; top:50%; color:#fff"><strong>樂學 廚藝教室</strong></div>
+        
+    </div>
+
+    <div class="container mt-3">
+
+        <div class="card-columns">
+            <div class="card">
+                <a href="Bootstrap-01-01-Exercise02-Breakfast.html" title="早餐餐點">
+                    <img src="figure/IMG-003-BreakfastLogo.jpg" class="card-img-top" alt="...">
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title">早餐點餐</h5>
+                    <p class="card-text">
+                        早餐樣式
+                        <ul>
+                            <li>Croissant 羊角麵包</li>
+                            <li>Toast 土司麵包</li>
+                            <li>Waffle 鬆餅</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+     
+            <div class="card">
+                <a href="Bootstrap-01-01-Exercise02-Lunch.html" title="午餐餐點">
+                    <img src="figure/IMG-005-LunchLogo.jpeg" class="card-img-top" alt="...">
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title">午餐點餐</h5>
+                    <p class="card-text">
+                        午餐樣式
+                        <ul>
+                            <li>Rice Cuisine 飯食料理</li>
+                            <li>Noodle Cuisine 麵食料理</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="Bootstrap-01-01-Exercise02-Drinks.html" title="飲料種類">
+                    <img src="figure/IMG-004-DrinksLogo.jpg" class="card-img-top" alt="...">
+                </a>
+
+                <div class="card-body">
+                    <h5 class="card-title">飲料提供</h5>
+                    <p class="card-text">
+                        飲料總類
+                        <ul>
+                            <li>Coffee 咖啡 (冰/熱）</li>
+                            <li>Tea 茶飲 (冰/熱）</li>
+                            <li>Drink 其他飲料</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+ 
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
